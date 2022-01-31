@@ -25,7 +25,6 @@ terraform plan  -out=myplan  -detailed-exitcode
 if [ $? -eq 2 ]
 then
  echo "YOU ARE READY TO APPLY"
- #terraform  apply myplan
  unset AWS_ACCESS_KEY_ID
  unset AWS_SECRET_ACCESS_KEY
  unset AWS_REGION
