@@ -1,0 +1,9 @@
+name: "terra-plan"
+description: "just plan terraform  action"
+author: abrarcv170
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: violet
