@@ -1,11 +1,17 @@
 # Terraform-plan-Action 
-#### Terraform is a popular infrastructure as code tool which help us to store our infrastructue as human-readable configuration files that we can version, reuse, and share.This action   will perform basic terraform plan operation and  return  the code changes will bring any infrastructure changes or not.
-#### The main objective of the action is not limited to just terraform plan operation, as we know terraform is a powerfull tool,let me give an example if someone  added the code for a static website to github at that time we can host a static site in AWS with the  help of terraform,so we can modify  this action based on our constraints,also this action  originated from the thought of  versioning terraform configurations.
+
+ Terraform is a popular infrastructure as code tool which help us to store our infrastructue as human-readable configuration files that we can version,     reuse, and share.This action  will perform basic terraform plan operation and  return  the code changes will bring any infrastructure changes or not.
+
+The main objective of the action is not limited to just terraform plan operation, as we know terraform is a powerfull tool,let me give an example if someone  added the code for a static website to github at that time we can host a static site in AWS with the  help of terraform,so we can modify 
+this action based on our constraints,also this action  originated from the thought of  versioning terraform configurations.
+
 
 ## How to use
+```
 1. create a AWS IAM user  with  programatic access 
 2. configure the following github repo secrets **AWS_ACCESS_KEY**,**AWS_SECRET_ACCESS_KEY**,**AWS_REGION**
 3. create wokflow file in the path _.github/workflows/_ eg: _.github/workflows/main.yml_
+```
 ```
 name: terraform plan
 
